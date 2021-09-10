@@ -47,6 +47,9 @@ set mouse=a
 
 set clipboard=unnamedplus
 
+" Split
+set splitbelow splitright
+
 " Buffer Highlight
 syntax sync fromstart
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
@@ -73,11 +76,11 @@ colorscheme dracula_pro
 let mapleader=" "
 nnoremap <leader>ff :Telescope find_files<cr>
 nnoremap <leader>fg :Telescope git_files<cr>
-nnoremap <C-o> :NERDTreeToggle <cr>
 nnoremap <C-s> :w <cr>
 
 " NerdTree Configs
 nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-o> :NERDTreeToggle <cr>
 let NERDTreeShowLineNumbers = 1
 let NERDTreeShowHidden = 1
 let g:NERDTreeWinSize = 38
